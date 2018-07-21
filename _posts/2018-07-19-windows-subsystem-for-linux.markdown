@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Быстрота Linux на Windows 10"
-subtitle:  "Ода bash-терминалу в Windows Subsystem for Linux"
-date:   2018-07-19 16:23:19 +0300
-permalink: /page/:title
+layout:     post
+title:      "Быстрота Linux на Windows 10"
+subtitle:   "Ода bash-терминалу в Windows Subsystem for Linux"
+date:       2018-07-19 16:23:19 +0300
+permalink:  /page/:title
 categories: webdev
 ---
 Статья о настройке функциональности и внешнего вида bash-терминала Windows Subsystem for Linux (WSL) в Windows 10.
@@ -58,7 +58,7 @@ categories: webdev
 1.  В проводнике сделайте правый клик на **Этот компьютер**, выберите **Свойства**, потом **Дополнительные параметры системы**.
 2.  На вкладке **Дополнительно** нажмите кнопку **Переменные среды**.
 3.  Сделайте двойной клик по **Path** для перехода к её редактированию.
-4.  Нажмите кнопку **Создать** и добавьте путь к subl.exe.  
+4.  Нажмите кнопку **Создать** и добавьте путь к subl.exe.
     В моем случае это `c:\Program Files\Sublime Text 3\`.
 5.  Перезапустите терминал.
 

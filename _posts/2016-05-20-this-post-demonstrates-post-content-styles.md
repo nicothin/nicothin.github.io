@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "This post demonstrates post content styles"
-categories: junk
+categories: photo
 author: "Bart Simpson"
-description: "Springfield"
 ---
 
 Первый параграф

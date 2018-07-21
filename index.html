@@ -1,8 +1,8 @@
 ---
 layout: home
+title: "Блог"
 ---
 
-<!-- Цикл по списку постов, разбитых на страницы-->
 {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
   {% if post.subtitle %}

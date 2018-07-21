@@ -2,9 +2,9 @@
   <meta charset="utf-8">
 
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
-  {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
-  <meta property="og:description" content="{{ page.description }}" />
+  {% if page.subtitle %}
+  <meta name="description" content="{{ page.subtitle }}" />
+  <meta property="og:description" content="{{ page.subtitle }}" />
   {% else %}
   <meta name="description" content="{{ site.description }}">
   <meta property="og:description" content="{{ site.description }}" />

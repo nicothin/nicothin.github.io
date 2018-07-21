@@ -1,0 +1,12 @@
+{% if post %}
+  {% assign categories = post.categories %}
+{% else %}
+  {% assign categories = page.categories %}
+{% endif %}
+
+{% for category in categories %}
+  →
+  <a href="{{site.url}}/category/{{category|slugize}}">{{ site.data.categories[category].title }}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+{% endfor %}
+

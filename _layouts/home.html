@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+
+  {%- if page.catName -%}
+    <h1 class="page-heading">{{ site.data.categories[page.catName].title }}</h1>
+    <div>{{ site.data.categories[page.catName].description }}</div>
   {%- endif -%}
 
   {{ content }}

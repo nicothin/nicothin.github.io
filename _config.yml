@@ -1,9 +1,9 @@
 # bundle exec jekyll serve
 
-title: Николай Громов
-author: nicothin
-email: nicothin@gmail.com
-description: Блог Николая Громова
+title: "Николай Громов"
+author: "Николай Громов"
+email: "nicothin@gmail.com"
+description: "Блог Николая Громова"
 date_format: "%-d.%m.%Y"
 lang: ru
 

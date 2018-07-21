@@ -1,18 +1,39 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: "Обо мне"
+subtitle: "Кто такой Николай Громов"
+permalink: /page/about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+```css
+.NikolayGromov::before {
+  content: "+";
+  background-color: white;
+  color: red;
+}
+```
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Аз есмь web‑разработчик, фрилансер. Живу и работаю в Санкт‑Петербурге. Область деятельности — HTML-CSS-вёрстка. Первый свой сайт сделал в 2000 г.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Образование
+-----------
 
+Я закончил [СПбГМА им. И. И. Мечникова](http://www.mechnik.spb.ru/) (2003 г.), там же проходил интернатуру (2003‒04 гг.) и аспирантуру (2004‒06 гг.). По образованию — врач общей практики, специализация — терапия. Будучи в аспирантуре, 2 года преподавал 3‑му курсу фармакологию. Посвятив 9 лет медицине, чётко усвоил: жизнь слишком коротка, чтобы заниматься не тем, что нравится больше всего. Бросил аспирантуру и медицину, занялся тем, что нравится.
 
-[jekyll-organization]: https://github.com/jekyll
+Преподавательская работа
+------------------------
+
+Веду несколько занятий на базовом курсе по вёрстке и чуть более половины занятий на курсе для продвинутых в [EPIC SKILLS](http://epixx.ru/). Ранее вёл вебинары на базовом и  на продвинутом интенсивах [HTML Academy](https://htmlacademy.ru).
+
+За какую работу берусь
+----------------------
+
+Вёрстка. HTML, CSS, JS. Оптимально, кроссбраузерно (прогрессивное улучшение, mobile first, **IE11+**, адаптивность).
+
+Работой, обычно, загружен на 1-1.5 месяца вперед, вероятность, что не смогу взяться за Ваш проект в день обращения — 90%.
+
+### Инструменты, которыми владею особенно хорошо
+
+Мозг, LESS, Sass, jQuery, БЭМ, Bootstrap, Photoshop, Sublime Text и КОНЕЧНО ЖЕ СКАЙП!!!1111.
+
+Автоматизацию предпочитаю на Gulp. Собираю [собственную библиотеку технических решений](https://github.com/nicothin/NTH-start-project).

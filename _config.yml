@@ -1,0 +1,40 @@
+# bundle exec jekyll serve
+
+title: Николай Громов
+author: nicothin
+email: nicothin@gmail.com
+description: Блог Николая Громова
+date_format: "%-d.%m.%Y"
+lang: ru
+
+# social links
+twitter_username: nicothin
+github_username:  nicothin
+# rss: rss
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+# linkedin_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+
+# Mastodon instances
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
+
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+plugins:
+ # - jekyll-feed
+ # - jekyll-seo-tag

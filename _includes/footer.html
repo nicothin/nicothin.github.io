@@ -45,4 +45,11 @@
 
   </div>
 
+  <script>
+    var js = document.createElement('script');
+    js.src = '{{ "/assets/prism.js" | relative_url }}';
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(js);
+  </script>
+
 </footer>

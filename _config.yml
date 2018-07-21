@@ -10,6 +10,13 @@ lang: ru
 paginate: 8
 paginate_path: "/home/next/:num"
 
+markdown: kramdown
+kramdown:
+  # input: GFM
+  # hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
 # social links
 twitter_username: nicothin
 github_username:  nicothin
@@ -43,3 +50,6 @@ plugins:
   - jekyll-paginate
  # - jekyll-feed
  # - jekyll-seo-tag
+
+sass:
+  style: compressed

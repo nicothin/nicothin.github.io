@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Контакты
+subtitle: "Как списаться или созвониться"
 permalink: /page/contact
 description: "Контакты Николая Громова"
 ---

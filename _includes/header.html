@@ -9,7 +9,7 @@
   {% if page.isHome %}
     <!-- Это главная, не показываем «хлебные крошки» -->
   {% else %}
-    <div class="page-header__breadcrumbs">
+    <div class="page__breadcrumbs">
       <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       {% for category in categories %}
         →
@@ -23,7 +23,7 @@
   {%- assign page_paths = site.header_pages | default: default_paths -%}
 
   {%- if page_paths -%}
-    <nav class="page-header__nav  main-nav" role="navigation">
+    <nav class="page__nav  main-nav" role="navigation">
       <ul class="main-nav__list">
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}

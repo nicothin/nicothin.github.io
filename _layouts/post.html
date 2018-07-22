@@ -4,21 +4,51 @@ layout: default
 <article class="post">
 
   <header class="post__header">
-    <h1 class="post__title">{{ page.title | escape }}</h1>
-    {% if page.subtitle %}
-      <p class="post__subtitle">{{ page.subtitle }}</p>
-    {% endif %}
-    <p class="post__meta">
-      <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      <!-- {%- include post-category.html -%} -->
-    </p>
+    <div class="post__header-inner">
+      <h1 class="post__title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="post__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      <p class="post__meta">
+        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">
+          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        <!-- {%- include post-category.html -%} -->
+      </p>
+    </div>
   </header>
 
   <div class="post__content">
-    {{ content }}
+    {{ content
+      | replace: " в ", " в "
+      | replace: "(в ", "(в "
+      | replace: " В ", " В "
+      | replace: " и ", " и "
+      | replace: " к ", " к "
+      | replace: " К ", " К "
+      | replace: " с ", " с "
+      | replace: " С ", " С "
+      | replace: " о ", " о "
+      | replace: " а ", " а "
+      | replace: " по ", " по "
+      | replace: " но ", " но "
+      | replace: " он ", " он "
+      | replace: " не ", " не "
+      | replace: " Не ", " Не "
+      | replace: " при ", " при "
+      | replace: " его ", " его "
+      | replace: " их ", " их "
+      | replace: " её ", " её "
+      | replace: " своё ", " своё "
+      | replace: " мой ", " мой "
+      | replace: " из ", " из "
+      | replace: " как ", " как "
+      | replace: " я ", " я "
+      | replace: " для ", " для "
+      | replace: " Для ", " Для "
+      | replace: " т.к. ", " т.к. "
+    }}
   </div>
 
   {%- if site.disqus.shortname -%}

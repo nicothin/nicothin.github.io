@@ -8,7 +8,7 @@ catName: photo
     <li>
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <a href="{{ post.url }}">{{ post.title | escape }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>

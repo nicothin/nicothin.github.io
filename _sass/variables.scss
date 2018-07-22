@@ -8,7 +8,7 @@ $gray-lighten:                hsl(0, 0%, 70%);
 $gray-lighter:                hsl(0, 0%, 80%);
 $gray-lightest:               hsl(0, 0%, 90%);
 
-$bg-color:                    #090806;
+$bg-color:                    #40392D;
 
 $color-main:                  hsl(208, 98%, 43%);
 $color-success:               hsl(120, 39%, 54%);
@@ -18,7 +18,7 @@ $color-warning:               hsl(35, 84%, 62%);
 $link-color:                  $color-main;
 $link-color--hover:           darken($link-color, 15%);
 
-$screem-xs:                   320px;
-$screem-sm:                   560px;
-$screem-md:                   768px;
-$screem-lg:                   1200px;
+$screen-xs:                   320px;
+$screen-sm:                   560px;
+$screen-md:                   768px;
+$screen-lg:                   1200px;

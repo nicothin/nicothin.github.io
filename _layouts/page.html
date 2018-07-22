@@ -4,10 +4,12 @@ layout: default
 <article class="post">
 
   <header class="post__header">
-    <h1 class="post__title">{{ page.title | escape }}</h1>
-    {% if page.subtitle %}
-      <p class="post__subtitle">{{ page.subtitle }}</p>
-    {% endif %}
+    <div class="post__header-inner">
+      <h1 class="post__title">{{ page.title | escape }}</h1>
+      {% if page.subtitle %}
+        <p class="post__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </div>
   </header>
 
   <div class="post__content">

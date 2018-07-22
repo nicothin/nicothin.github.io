@@ -2,12 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<div class="posts-list">
 
-  {%- if page.catName -%}
-    <h1 class="page-heading">{{ site.data.categories[page.catName].title }}</h1>
-    <div>{{ site.data.categories[page.catName].description }}</div>
-  {%- endif -%}
+  <div class="posts-list__header">
+    <h1 class="posts-list__title">
+      <!-- Есть есть имя категории — покажем название категории -->
+      {% if page.catName %}
+        {{ site.data.categories[page.catName].title }}
+      <!-- Иначе покажем название сайта -->
+      {%- else -%}
+        {{ site.title | escape }}
+      {% endif %}
+    </h1>
+    <p class="posts-list__subtitle">
+      {% if page.catName %}
+        {{ site.data.categories[page.catName].description }}
+      {%- else -%}
+        {{ site.description }}
+      {% endif %}
+    </p>
+  </div>
 
   {{ content }}
 

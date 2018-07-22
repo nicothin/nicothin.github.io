@@ -1,33 +1,38 @@
-<header class="site-header" role="banner">
+<header class="page__header" role="banner">
 
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  {% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
 
-    {% if post %}
-      {% assign categories = post.categories %}
-    {% else %}
-      {% assign categories = page.categories %}
-    {% endif %}
+  {% if page.isHome %}
+    <!-- Это главная, не показываем «хлебные крошки» -->
+  {% else %}
+    <div class="page-header__breadcrumbs">
+      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      {% for category in categories %}
+        →
+        <a href="{{site.url}}/category/{{category|slugize}}">{{ site.data.categories[category].title }}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-    {% for category in categories %}
-      →
-      <a href="{{site.url}}/category/{{category|slugize}}">{{ site.data.categories[category].title }}</a>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-    {%- if page_paths -%}
-      <nav class="site-nav">
-        <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </nav>
-    {%- endif -%}
-  </div>
+  {%- if page_paths -%}
+    <nav class="page-header__nav  main-nav" role="navigation">
+      <ul class="main-nav__list">
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <li class="main-nav__item"><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+  {%- endif -%}
+
 </header>

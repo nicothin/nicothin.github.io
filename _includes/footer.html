@@ -1,49 +1,64 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="page__footer" role="contentinfo">
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <p>{{ site.copyright | escape }}</p>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
+    <ul class="social-links">
+      {%- if site.vkontakte_username -%}
+        <li>
+          <a href="https://vk.com/{{ site.vkontakte_username| cgi_escape | escape }}" title="vkontakte">
+            <svg viewBox="0 0 20 20" width="20" height="20">
+              <path d="M17.802 12.298c0 0 1.617 1.597 2.017 2.336 0.011 0.016 0.016 0.028 0.018 0.035 0.163 0.273 0.203 0.487 0.123 0.645-0.135 0.261-0.592 0.392-0.747 0.403 0 0-2.778 0-2.858 0-0.199 0-0.613-0.052-1.117-0.4-0.385-0.269-0.768-0.712-1.139-1.145-0.554-0.643-1.033-1.201-1.518-1.201-0.062 0-0.122 0.010-0.18 0.030-0.367 0.116-0.833 0.639-0.833 2.032 0 0.436-0.344 0.684-0.585 0.684 0 0-1.248 0-1.309 0-0.446 0-2.768-0.156-4.827-2.327-2.523-2.658-4.789-7.99-4.811-8.037-0.141-0.345 0.155-0.533 0.475-0.533h2.886c0.387 0 0.513 0.234 0.601 0.444 0.102 0.241 0.48 1.205 1.1 2.288 1.004 1.762 1.621 2.479 2.114 2.479 0.093 0 0.181-0.023 0.264-0.070 0.644-0.354 0.524-2.654 0.494-3.128 0-0.092-0.001-1.027-0.331-1.479-0.236-0.324-0.638-0.45-0.881-0.496 0.065-0.094 0.203-0.238 0.38-0.323 0.441-0.22 1.238-0.252 2.029-0.252h0.439c0.858 0.012 1.080 0.067 1.392 0.146 0.628 0.15 0.64 0.557 0.585 1.943-0.016 0.396-0.033 0.842-0.033 1.367 0 0.112-0.005 0.237-0.005 0.364-0.019 0.711-0.044 1.512 0.458 1.841 0.064 0.040 0.139 0.062 0.217 0.062 0.174 0 0.695 0 2.108-2.425 0.62-1.071 1.1-2.334 1.133-2.429 0.028-0.053 0.112-0.202 0.214-0.262 0.078-0.048 0.182-0.056 0.236-0.056h3.395c0.37 0 0.621 0.056 0.67 0.196 0.082 0.227-0.016 0.92-1.566 3.016-0.261 0.349-0.49 0.651-0.691 0.915-1.405 1.844-1.405 1.937 0.083 3.337z"></path>
+            </svg>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if site.github_username -%}
+        <li>
+          <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="github">
+            <svg viewBox="0 0 20 20" width="20" height="20">
+              <path d="M13.18 11.309c-0.718 0-1.3 0.807-1.3 1.799 0 0.994 0.582 1.801 1.3 1.801s1.3-0.807 1.3-1.801c-0.001-0.992-0.582-1.799-1.3-1.799zM17.706 6.626c0.149-0.365 0.155-2.439-0.635-4.426 0 0-1.811 0.199-4.551 2.080-0.575-0.16-1.548-0.238-2.519-0.238-0.973 0-1.945 0.078-2.52 0.238-2.741-1.881-4.552-2.080-4.552-2.080-0.789 1.987-0.781 4.061-0.634 4.426-0.928 1.008-1.495 2.219-1.495 3.871 0 7.186 5.963 7.301 7.467 7.301 0.342 0 1.018 0.002 1.734 0.002s1.392-0.002 1.732-0.002c1.506 0 7.467-0.115 7.467-7.301 0-1.652-0.566-2.863-1.494-3.871zM10.028 16.915h-0.056c-3.771 0-6.709-0.449-6.709-4.115 0-0.879 0.31-1.693 1.047-2.369 1.227-1.127 3.305-0.531 5.662-0.531 0.010 0 0.020 0 0.029 0s0.018 0 0.027 0c2.357 0 4.436-0.596 5.664 0.531 0.735 0.676 1.045 1.49 1.045 2.369 0 3.666-2.937 4.115-6.709 4.115zM6.821 11.309c-0.718 0-1.3 0.807-1.3 1.799 0 0.994 0.582 1.801 1.3 1.801s1.301-0.807 1.301-1.801c0-0.992-0.582-1.799-1.301-1.799z"></path>
+            </svg>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if site.instagram_username -%}
+        <li>
+          <a href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" title="instagram">
+            <svg viewBox="0 0 20 20" width="20" height="20">
+              <path d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h14c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2zM9.984 15.523c3.059 0 5.538-2.481 5.538-5.539 0-0.338-0.043-0.664-0.103-0.984h1.581v7.216c0 0.382-0.31 0.69-0.693 0.69h-12.614c-0.383 0-0.693-0.308-0.693-0.69v-7.216h1.549c-0.061 0.32-0.104 0.646-0.104 0.984 0 3.059 2.481 5.539 5.539 5.539zM6.523 9.984c0-1.912 1.55-3.461 3.462-3.461s3.462 1.549 3.462 3.461-1.551 3.462-3.462 3.462c-1.913 0-3.462-1.55-3.462-3.462zM16.307 6h-1.615c-0.382 0-0.692-0.312-0.692-0.692v-1.617c0-0.382 0.31-0.691 0.691-0.691h1.615c0.384 0 0.694 0.309 0.694 0.691v1.616c0 0.381-0.31 0.693-0.693 0.693z"></path>
+            </svg>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if site.twitter_username -%}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" title="twitter">
+            <svg viewBox="0 0 20 20" width="20" height="20">
+              <path d="M17.316 6.246c0.008 0.162 0.011 0.326 0.011 0.488 0 4.99-3.797 10.742-10.74 10.742-2.133 0-4.116-0.625-5.787-1.697 0.296 0.035 0.596 0.053 0.9 0.053 1.77 0 3.397-0.604 4.688-1.615-1.651-0.031-3.046-1.121-3.526-2.621 0.23 0.043 0.467 0.066 0.71 0.066 0.345 0 0.679-0.045 0.995-0.131-1.727-0.348-3.028-1.873-3.028-3.703 0-0.016 0-0.031 0-0.047 0.509 0.283 1.092 0.453 1.71 0.473-1.013-0.678-1.68-1.832-1.68-3.143 0-0.691 0.186-1.34 0.512-1.898 1.861 2.285 4.644 3.787 7.781 3.945-0.064-0.277-0.097-0.564-0.097-0.861 0-2.084 1.689-3.773 3.774-3.773 1.086 0 2.067 0.457 2.756 1.191 0.859-0.17 1.667-0.484 2.397-0.916-0.282 0.881-0.881 1.621-1.66 2.088 0.764-0.092 1.49-0.293 2.168-0.594-0.506 0.758-1.146 1.422-1.884 1.953z"></path>
+            </svg>
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if site.youtube_channel -%}
+        <li>
+          <a href="https://www.youtube.com/channel/{{ site.youtube_channel| cgi_escape | escape }}" title="youtube">
+            <svg viewBox="0 0 20 20" width="20" height="20">
+              <path d="M10 2.3c-9.828 0-10 0.874-10 7.7s0.172 7.7 10 7.7 10-0.874 10-7.7-0.172-7.7-10-7.7zM13.205 10.334l-4.49 2.096c-0.393 0.182-0.715-0.022-0.715-0.456v-3.948c0-0.433 0.322-0.638 0.715-0.456l4.49 2.096c0.393 0.184 0.393 0.484 0 0.668z"></path>
+            </svg>
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {%- if site.dribbble_username -%}<li><a href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg> <span class="username">{{ site.dribbble_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <span class="username">{{ site.facebook_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.flickr_username -%}<li><a href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#flickr' | relative_url }}"></use></svg> <span class="username">{{ site.flickr_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.instagram_username -%}<li><a href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg> <span class="username">{{ site.instagram_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">{{ site.linkedin_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.pinterest_username -%}<li><a href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#pinterest' | relative_url }}"></use></svg> <span class="username">{{ site.pinterest_username| escape }}</span></a></li>{%- endif -%}
-          {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg> <span class="username">{{ mst.username|escape }}</span></a></li>{%- endif -%}{%- endfor -%}
-          {%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.youtube_username -%}<li><a href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg> <span class="username">{{ site.youtube_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg> <span class="username">{{ site.googleplus_username| escape }}</span></a></li>{%- endif -%}
-          {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+    <div class="footer-col footer-col-3">
+      <p>{{- site.description | escape -}}</p>
     </div>
 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></a>.
   </div>
+
 
   <script>
     var js = document.createElement('script');

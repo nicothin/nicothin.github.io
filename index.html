@@ -1,15 +1,22 @@
 ---
 layout: home
-title: "Блог"
+title:  "Блог"
+isHome: true
 ---
 
 {% for post in paginator.posts %}
-  <h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
-  {% if post.subtitle %}
-    <p>{{ post.subtitle | escape }}</p>
-  {% endif %}
-  {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-  <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <article class="post-list__item">
+    <h2 class="post-list__item-title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h2>
+    {% if post.subtitle %}
+      <p class="post-list__item-subtitle">{{ post.subtitle | escape }}</p>
+    {% endif %}
+    <p class="post-list__item-meta">
+      <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}
+      </time>
+    </p>
+  </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}

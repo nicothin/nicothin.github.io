@@ -1,9 +1,9 @@
 # bundle exec jekyll serve
 
-title: "Николай Громов"
-author: "Николай Громов"
-email: "nicothin@gmail.com"
+title:       "Николай Громов"
+email:       "nicothin@gmail.com"
 description: "Блог Николая Громова"
+copyright:   "© Николай Громов. Внутренняя Монголия, вечность, лето."
 
 date_format: "%-d.%m.%Y"
 lang: ru
@@ -12,46 +12,33 @@ paginate_path: "/home/next/:num"
 
 markdown: kramdown
 kramdown:
-  # input: GFM
-  # hard_wrap: false
   syntax_highlighter_opts:
     disable: true
 
-# social links
-twitter_username: nicothin
-github_username:  nicothin
-# rss: rss
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
-# linkedin_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# googleplus_username: +jekyll
+vkontakte_username: "n.gromov"
+github_username:    "nicothin"
+youtube_channel:    "UC755nnsqbwosIkRlXRDfZKQ"
+twitter_username:   "nicothin"
+instagram_username: "nicothinum"
 
-# Mastodon instances
-# mastodon:
-# - username: jekyll
-#   instance: example.com
-# - username: jekyll2
-#   instance: example.com
-
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
+# В пункты гункты главной попадут:
 header_pages:
-- index.html
-- about.md
-- contact.md
+  - index.html
+  - about.md
+  - contact.md
 
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
- # - jekyll-feed
- # - jekyll-seo-tag
 
 sass:
   style: compressed

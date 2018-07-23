@@ -1,8 +1,9 @@
 ---
-layout: page
-title: "Обо мне"
-subtitle: "Кто такой Николай Громов?"
+layout:    page
+title:     "Обо мне"
+subtitle:  "Кто такой Николай Громов?"
 permalink: /page/about
+pict:      "bg-smoker.jpg"
 ---
 
 Аз есмь web‑разработчик, фрилансер. Живу и работаю в Санкт‑Петербурге. Область деятельности — вёрстка/фронтенд (HTML, CSS, Javascript, Sass, LESS, Pug, Git, Bootsrap, вот это вот всё). Первый свой сайт сделал в 2000 г.

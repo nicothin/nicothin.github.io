@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
 
-  <header class="header">
+  <header class="header"{% if page.pict %} style="background-image: url({{site.url}}/img/{{page.pict}})"{% endif %}>
     <div class="header__inner">
       <h1 class="header__title">{{ page.title }}</h1>
       {% if page.subtitle %}

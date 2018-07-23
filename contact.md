@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Контакт
+layout:    page
+title:     Контакт
 permalink: /page/contact
+pict:      "bg-smoker.jpg"
 ---
 
 Проще всего — написать ВКонтакте или другой социальной сети. Ссылки — в нижней части страницы.

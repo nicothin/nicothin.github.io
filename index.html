@@ -33,14 +33,14 @@ isHome: true
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Новее</a>
+    <a class="pagination__text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Новее</a>
   {% else %}
     <!-- <span>&laquo; Prev</span> -->
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <b>{{ page }}</b>
     {% elsif page == 1 %}
       <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
@@ -49,7 +49,7 @@ isHome: true
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Стрее</a>
+    <a class="pagination__text" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Старее</a>
   {% else %}
     <!-- <span>Next &raquo;</span> -->
   {% endif %}

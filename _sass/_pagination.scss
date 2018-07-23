@@ -1,0 +1,33 @@
+.pagination {
+  @include content();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  a,
+  b {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    background: $gray-lighter;
+    color: $gray-darker;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  a {
+
+    &:hover,
+    &:focus {
+      background: $gray-lightest;
+    }
+  }
+
+  b {
+    cursor: pointer;
+    background: $gray-lightest;
+    font-weight: 400;
+  }
+}

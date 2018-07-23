@@ -3,18 +3,17 @@ layout: default
 ---
 <article class="post">
 
-  <header class="post__header">
-    <div class="post__header-inner">
-      <h1 class="post__title">{{ page.title }}</h1>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">{{ page.title }}</h1>
       {% if page.subtitle %}
-        <p class="post__subtitle">{{ page.subtitle }}</p>
+        <p class="header__subtitle">{{ page.subtitle }}</p>
       {% endif %}
-      <p class="post__meta">
-        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">
+      <p class="header__meta">
+        <time class="header__date" datetime="{{ page.date | date_to_xmlschema }}">
           {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
           {{ page.date | date: date_format }}
         </time>
-        <!-- {%- include post-category.html -%} -->
       </p>
     </div>
   </header>
@@ -32,9 +31,12 @@ layout: default
       | replace: " о ", " о "
       | replace: " а ", " а "
       | replace: " по ", " по "
+      | replace: " со ", " со "
+      | replace: " за ", " за "
       | replace: " но ", " но "
       | replace: " он ", " он "
       | replace: " не ", " не "
+      | replace: " нa ", " нa "
       | replace: " Не ", " Не "
       | replace: " при ", " при "
       | replace: " его ", " его "
@@ -47,7 +49,7 @@ layout: default
       | replace: " я ", " я "
       | replace: " для ", " для "
       | replace: " Для ", " Для "
-      | replace: " т.к. ", " т.к. "
+      | replace: "это же", "это же"
     }}
   </div>
 

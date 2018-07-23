@@ -1,0 +1,43 @@
+.header {
+  margin-bottom: 3rem;
+  padding: 10rem 1.5rem 3rem;
+  background: $bg-color url(../img/bg-airplane.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 4.5rem;
+    text-align: left;
+    padding-bottom: 5rem;
+  }
+
+  &__inner {
+    @include content();
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 2rem;
+      font-size: 3.9rem;
+      line-height: 1.1;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 2rem;
+    // font-size: 1.6rem;
+
+    @media (min-width: $screen-md) {
+      font-size: 2rem;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+  }
+
+  &__meta {
+    margin: 0;
+  }
+}

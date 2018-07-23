@@ -21,7 +21,7 @@
     min-width: 320px;
     padding-top: 1rem;
     text-align: center;
-    color: #d6ccba;
+    color: #F5F2F0;
 
     @media (min-width: $screen-sm) {
       display: flex;
@@ -40,7 +40,7 @@
 
       &:hover,
       &:focus {
-        color: #fff;
+        color: $gray-lighten;
       }
     }
   }
@@ -61,8 +61,12 @@
   }
 
   &__footer {
+    @include content();
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     flex-shrink: 0;
     text-align: center;
+    font-size: 1rem;
   }
 }
 
@@ -85,7 +89,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #222;
+  color: $gray-darker;
   background-color: #fff;
   word-break: break-word;
 }

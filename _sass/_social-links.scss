@@ -1,0 +1,43 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+  list-style: none;
+
+  li {
+    margin: 0 0.5rem;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $bg-color;
+    color: $gray-lightest;
+
+    @media (min-width: $screen-sm) {
+      width: 48px;
+      height: 48px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $gray-lighten;
+    }
+
+  }
+
+  svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: $screen-sm) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

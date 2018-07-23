@@ -1,44 +1,57 @@
 .posts-list {
 
-  &__header {
-    margin-bottom: 3rem;
-    padding: 10rem 1.5rem 3rem;
-    background: $bg-color url(../img/bg-airplane.jpg) center no-repeat;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
+  &__content {
+    @include content();
+    list-style: none;
+  }
 
-    @media (min-width: $screen-md) {
-      margin-bottom: 4.5rem;
-      text-align: left;
-      padding-bottom: 5rem;
+  &__date {
+    margin-right: 0.3rem;
+    color: $gray-light;
+  }
+
+  &__homepage {
+    @include content();
+  }
+
+  &__item {
+    border-bottom: 2px solid $gray-lightest;
+  }
+
+  &__item-title {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      // &:visited {
+      //   color: $gray-dark;
+      // }
+
+      &:hover,
+      &:focus {
+        color: $link-color;
+      }
     }
   }
 
-  &__header-inner {
-    max-width: 700px;
-    padding: 0 1.2rem;
-    margin: auto;
+  &__item-subtitle {
+    margin-top: 0;
   }
 
-  &__title {
-    margin: 0 0 1rem;
+  &__item-meta {
+    margin-bottom: 2rem;
+    color: $gray-light;
 
-    @media (min-width: $screen-md) {
-      margin-bottom: 2rem;
-      font-size: 3.9rem;
-      line-height: 1.1;
-    }
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
 
-  &__subtitle {
-    margin: 0 0 2rem;
-    font-size: 1.6rem;
-
-    @media (min-width: $screen-md) {
-      font-size: 2.1rem;
-      line-height: 1.1;
-      font-weight: 700;
+      &:hover,
+      &:focus {
+        color: $link-color;
+      }
     }
   }
 }

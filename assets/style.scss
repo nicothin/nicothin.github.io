@@ -2,9 +2,12 @@
 ---
 
 @import "variables";
+@import "mixins";
 
 @import "page";
 @import "main-nav";
+@import "header";
 @import "posts-list";
 @import "post";
 @import "prism";
+@import "social-links";

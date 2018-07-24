@@ -147,6 +147,15 @@ pre {
   margin: 1.5rem 0;
 }
 
+ol,
+ul {
+  padding-left: 3rem;
+}
+
+li {
+  margin: 0.7rem 0;
+}
+
 // Стилизация code и pre вынесена в prism.scss
 
 img {

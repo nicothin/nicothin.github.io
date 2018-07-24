@@ -3,3 +3,13 @@
 Gemfile.lock
 _site
 *.gem
+*.sublime-*
+ex_files
+Thumbs.db
+__MACOSX
+.Saved/
+_arc/
+.vscode/
+.DS_Store
+bower_components/
+node_modules/

@@ -22,7 +22,7 @@ categories: web
 
 Как и с любым другим плагином:
 
-*   Ctrl+Shift+P (Cmd+Shift+P для OSX), набираем `install` , вызываем пункт `Package Control: Install Package` ,
+*   `Ctrl+Shift+P` (`Cmd+Shift+P` для OSX), набираем `install`, вызываем пункт `Package Control: Install Package`,
 *   ждем появления модального окна со списком доступных плагинов,
 *   набираем `Sync Settings` и выбираем пункт с ним.
 
@@ -36,22 +36,22 @@ categories: web
 
 ### 5\. Настроим ваш Sync Settings
 
-Идем в `Preferences → Packege Settings → Sync Settings → Settings - Default` , выделяем всё и копируем в буфер.
+Идем в Preferences → Packege Settings → Sync Settings → Settings - Default, выделяем всё и копируем в буфер.
 
-Идем в `Preferences → Packege Settings → Sync Settings → Settings - User` , вставляем из буфера.
+Идем в Preferences → Packege Settings → Sync Settings → Settings - User, вставляем из буфера.
 
 Заполняем поля `"access_token"` (вы генерировали его раньше, копипастим) и `"gist_id"` (это конечная часть URL-а вашего gist-а с настройками, примерно такая: b1b28f1c3586a9e3985989518db20457).
 
 ### 6\. Стянем настройки
 
-Ctrl+Shift+P (Cmd+Shift+P для OSX), находим и вызываем пункт `Sync Settings: Download` , ждем некоторое время (на быстром канале — в пределах 2-х минут) пока скачаются настройки и установятся все плагины.
+`Ctrl+Shift+P` (`Cmd+Shift+P` для OSX), находим и вызываем пункт `Sync Settings: Download`, ждем некоторое время (на быстром канале — в пределах 2-х минут) пока скачаются настройки и установятся все плагины.
 
 ## Как пользоваться
 
 1.  Пройтись по настройкам, поменять что-то для себя (я, к примеру, использую светлую тему)
 2.  Посмотреть какие плагины стоят, возможно, добавить свои.
 
-После изменений отправить свой настройки в свой гист: Ctrl+Shift+P (Cmd+Shift+P для OSX), находим и вызываем пункт `Sync Settings: Upload` .
+После изменений отправить свой настройки в свой гист: `Ctrl+Shift+P` (`Cmd+Shift+P` для OSX), находим и вызываем пункт `Sync Settings: Upload`.
 
 ## P.S.
 

@@ -17,7 +17,7 @@ categories: web
 *   бесплатность,
 *   локальность (не веб-сервис).
 
-Рассматривать буду все в разрезе использования консоли и [nodejs/npm](https://nodejs.org/en/). Если вы еще не начали использовать консольные инструменты, [самое время начать](/page/console-windows).
+Рассматривать буду все в разрезе использования консоли и [nodejs/npm](https://nodejs.org/en/). Если вы еще не начали использовать консольные инструменты, [самое время начать]({{ site.url }}/page/console-windows).
 
 ## Оптимизация шрифта
 
@@ -33,7 +33,9 @@ categories: web
 
 Лучший из найденных инструментов. Требует установленного [Python](https://www.python.org/downloads/). Ставим инструмент и потом в консоли:
 
+```bash
 pyftsubset fonts/Roboto-Black.ttf --output-file=fonts/Roboto-Black--pyftsubset.ttf --unicodes-file=codes.txt
+```
 
 *   `fonts/Roboto-Black.ttf` — исходный файл,
 *   `fonts/Roboto-Black--pyftsubset.ttf` — результат,
@@ -64,7 +66,9 @@ pyftsubset fonts/Roboto-Black.ttf --output-file=fonts/Roboto-Black--pyftsubset.t
 
 Устанавливаем глобально и потом в консоли можно:
 
-text="\`cat subset.txt\`" && fontmin -t "$text" fonts/lato.ttf > fonts/lato--fontmin.ttf
+```bash
+text="`cat subset.txt`" && fontmin -t "$text" fonts/lato.ttf > fonts/lato--fontmin.ttf
+```
 
 *   `subset.txt` — файл с символами, которые хочется оставить в шрифте ([пример](https://gist.github.com/nicothin/758b76f4785f1f8f4b154c3c86b9bc42)),
 *   `fonts/lato.ttf` — исходный файл,
@@ -82,7 +86,9 @@ text="\`cat subset.txt\`" && fontmin -t "$text" fonts/lato.ttf > fonts/lato--fon
 
 Ставим инструмент глобально и потом в консоли:
 
+```bash
 ttf2woff fonts/lato.ttf fonts/lato--ttf2woff.woff
+```
 
 Указывается путь и имя исходного и результирующего файла.
 
@@ -94,7 +100,9 @@ ttf2woff fonts/lato.ttf fonts/lato--ttf2woff.woff
 
 Ставим инструмент глобально и потом в консоли:
 
+```bash
 cat fonts/lato.ttf | ttf2woff2 >> fonts/lato--ttf2woff2.woff2
+```
 
 Указывается путь и имя исходного и результирующего файла.
 
@@ -144,5 +152,5 @@ cat fonts/lato.ttf | ttf2woff2 >> fonts/lato--ttf2woff2.woff2
 
 ## Смотри так же
 
-*   [Как сейчас нужно подключать шрифты](http://nicothin.pro/page/web-fonts)
+*   [Как сейчас нужно подключать шрифты]({{ site.url }}/page/web-fonts)
 *   [Репозиторий для экспериментов](https://github.com/nicothin/webfont_convert_test)

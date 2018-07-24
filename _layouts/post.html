@@ -20,6 +20,8 @@ layout: default
 
   <div class="post__content">
     {{ content
+      | replace: " — ", " — "
+      | replace: " вы ", " вы "
       | replace: " в ", " в "
       | replace: "(в ", "(в "
       | replace: " В ", " В "
@@ -31,10 +33,14 @@ layout: default
       | replace: " о ", " о "
       | replace: " а ", " а "
       | replace: " по ", " по "
+      | replace: " во ", " во "
+      | replace: " от ", " от "
       | replace: " со ", " со "
       | replace: " за ", " за "
+      | replace: " то ", " то "
       | replace: " но ", " но "
       | replace: " он ", " он "
+      | replace: " же ", " же "
       | replace: " не ", " не "
       | replace: " нa ", " нa "
       | replace: " Не ", " Не "
@@ -53,8 +59,22 @@ layout: default
     }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <div id="gitmentContainer" class="comments"></div>
+
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <script>
+    var gitment = new Gitment({
+      id: "{{page.slug}}",
+      title: "{{ page.title | replace: '&nbsp;', ' ' }} ({{ page.date | date: date_format }})",
+      owner: "nicothin",
+      repo: "nicothin.github.io",
+      oauth: {
+        client_id: "ac202b5c0667df9efba1",
+        client_secret: "867f6c4f01638b69e8f138893985ba28c5ba9b67",
+      },
+    });
+    gitment.render('gitmentContainer');
+  </script>
 
 </article>

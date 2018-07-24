@@ -14,11 +14,11 @@ categories: web
 
 ## Дополнения
 
-Как установить: Ctrl + Shift + P (покажет список всех команд Sublime Text 3), набрать `inst` (чтобы быстро найти команду `Package Control: Install Package` ), Enter, в появившемся списке всех возможных к установке дополнений начать набирать часть имени дополнения, когда оно найдено — Enter.
+Как установить: `Ctrl + Shift + P` (покажет список всех команд Sublime Text 3), набрать `inst` (чтобы быстро найти команду `Package Control: Install Package`), Enter, в появившемся списке всех возможных к установке дополнений начать набирать часть имени дополнения, когда оно найдено — `Enter`.
 
 ### Необходимый минимум
 
-*   [Emmet](https://packagecontrol.io/packages/Emmet) — сильно ускоряет набор при помощи аббревиатур. Вводим что-то вроде `.parent>.child-one>p>lorem^^+.child-two>p>lorem` — получаем логичную структуру разметки, с CSS всё еще круче. Об Emmet я надеюсь отдельную статейку написать.
+*   [Emmet](https://packagecontrol.io/packages/Emmet) — сильно ускоряет набор при помощи аббревиатур. Вводим что-то вроде `.parent>.child>p>lorem` — получаем логичную структуру разметки, с CSS всё еще круче.
 *   [AutoFileName](https://packagecontrol.io/packages/AutoFileName) — выдает подсказки при подключении файлов — когда курсор оказывается в кавычках, возникает выпадающее меню, не дающее ошибаться при линковке файлов проекта.
 *   [Sidebar Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) — расширяет возможности сайдбара — открытие в браузере, создание, переименование, дублирование, копирование адресов и т.п.
 *   [LESS](https://packagecontrol.io/packages/LESS), [SCSS](https://packagecontrol.io/packages/SCSS), [Stylus](https://packagecontrol.io/packages/Stylus) — дополнения для подсветки синтаксиса CSS-препроцессоров.

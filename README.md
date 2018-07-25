@@ -7,4 +7,4 @@ bundle exec jekyll serve    # запустить сборку и слежени�
 gem install jekyll-paginate # доустановить плагин
 ```
 
-[Поддерживаемые на github пдагины](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).
+[Поддерживаемые на github плагины](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).

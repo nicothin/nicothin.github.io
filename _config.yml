@@ -2,7 +2,6 @@
 
 title:       "Николай Громов"
 email:       "nicothin@gmail.com"
-# url:          "http://nicothin.pro"
 description: "Блог о веб-разработке"
 copyright:   "© Николай Громов. Внутренняя Монголия, вечность, лето."
 
@@ -23,6 +22,7 @@ twitter_username:   "nicothin"
 instagram_username: "nicothinum"
 
 exclude:
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - LICENSE
@@ -31,7 +31,7 @@ exclude:
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# В пункты гункты главной попадут:
+# В пункты главной навигации попадут:
 header_pages:
   - index.html
   - about.md

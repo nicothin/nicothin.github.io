@@ -33,7 +33,7 @@ categories: web
 
 [![bash-терминал сразу после установки]({{ site.url }}/img/bash001.png)]({{ site.url }}/img/bash001.png)
 
-## Основы использования терминала Ubuntu в Windows 10
+## Основы использования терминала Ubuntu в Windows&nbsp;10
 
 Это **подсистема** внутри Windows, чтобы использовать nodeJS и git, нужно поставить их в подсистему (даже если они уже установлены в Windows). Я выбрал вариант с Ubuntu, поэтому при установке nodejs пользовался [этой инструкцией](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions), а git установил командой `sudo apt-get install git` (не забудьте указать git-у своё имя пользователя и email).
 

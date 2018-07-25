@@ -1,0 +1,23 @@
+{
+  "excludeFiles": [
+    ".git",
+    ".sass-cache",
+    "_data",
+    "_includes",
+    "_layout",
+    "_sass",
+    "_site",
+    "assets",
+    "yaspeller",
+    "node_modules",
+    "libs"
+  ],
+  "lang": "ru,en",
+  "fileExtensions": [
+    ".md",
+    ".html"
+  ],
+  "dictionary": [
+    "someword1"
+  ]
+}

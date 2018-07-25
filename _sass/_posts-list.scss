@@ -6,6 +6,8 @@
   }
 
   &__date {
+    display: inline-block;
+    min-width: 80px;
     margin-right: 0.3rem;
     color: $gray-light;
   }

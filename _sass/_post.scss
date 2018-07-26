@@ -1,6 +1,7 @@
 .post {
 
-  &__content {
+  &__content,
+  &__donate {
     @include content();
     position: relative;
     padding-bottom: 3rem;
@@ -13,6 +14,16 @@
       right: 1.2rem;
       height: 1px;
       background-color: $gray-lighter;
+    }
+  }
+
+  &__donate {
+    color: $gray-light;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    a {
+      color: $gray-light;
     }
   }
 }

@@ -68,6 +68,31 @@
     text-align: center;
     font-size: 1rem;
   }
+
+  .gitment-container {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+
+  .gitment-editor-submit,
+  .gitment-comments-init-btn {
+    background: $gray-lighter;
+    color: $gray-darker;
+    font-size: inherit;
+    transition: background 0.2s;
+
+    &:disabled {
+      background: $gray-lightest;
+      color: $gray-darker;
+    }
+
+    &:hover,
+    &:focus {
+      background: $gray-lightest;
+      color: $gray-darker;
+    }
+  }
 }
 
 *,
@@ -78,6 +103,10 @@
 
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+*:disabled {
+  cursor: not-allowed;
 }
 
 body {

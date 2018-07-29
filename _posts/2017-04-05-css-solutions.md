@@ -27,7 +27,7 @@ categories: web
 
 ## Осторожнее с сокращениями слов
 
-Избыточные сокращения дают неочевидность (затрудняют восприятие и модификацию). Используйте [частоприменяемые слова](https://github.com/yoksel/common-words), несколько [распространенных сокращений](https://github.com/nicothin/idiomatic-pre-CSS/blob/gh-pages/words_and_abbreviations.md).
+Избыточные сокращения дают неочевидность (затрудняют восприятие и модификацию). Используйте [частые слова](https://github.com/yoksel/common-words), несколько [распространенных сокращений](https://github.com/nicothin/idiomatic-pre-CSS/blob/gh-pages/words_and_abbreviations.md).
 
 ## Помните о «весе» селекторов
 
@@ -153,7 +153,7 @@ CSS-сброс был популярен лет 5 назад, потом мы п
 *   [css-live.ru/](http://css-live.ru/)
 *   [css-tricks.com/](https://css-tricks.com/)
 *   [lea.verou.me/](http://lea.verou.me/)
-*   [sarasoueidan.com/articles/](https://sarasoueidan.com/articles/)
+*   [sarasoueidan.com/](https://sarasoueidan.com/articles/)
 *   [csswizardry.com/](http://csswizardry.com/)
 *   [tympanus.net/codrops/](http://tympanus.net/codrops/)
 *   [css-weekly.com/archives/](http://css-weekly.com/archives/)

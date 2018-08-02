@@ -1,7 +1,7 @@
 ---
 layout:    page
 title:     Контакт
-permalink: /page/contact
+permalink: /contact
 pict:      "bg-smoker.jpg"
 ---
 

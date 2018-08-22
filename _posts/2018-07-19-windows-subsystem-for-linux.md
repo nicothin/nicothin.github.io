@@ -138,7 +138,18 @@ fi
 
 На одном из домашних компьютеров работает сохранение истории команд между сеансами, на другом не работает (хотя права доступа и владелец файла `~/.bash_history` — активный пользователь и сохранение истории включено). Не критично.
 
-После загрузки Windows иногда (редко) отказывается работать. Помогает перезагрузка (это же Windows).
+Не работают инструменты копирования в буфер. К примеру, при настройке SSH для github.com, есть инструкция для Linux:
+
+```bash
+sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+```
+
+Но её невозможно выполнить, т.к. xclip работать не будет. Решается использованием виндовской утилиты: `clip.exe < ~/.ssh/id_rsa.pub`
+
+После загрузки Windows иногда (было всего дважды) отказывается работать. Помогает перезагрузка (это же Windows).
 
 [![Баг bash-терминала: как будто он не установлен]({{ site.url }}/img/bash-bug01.png)]({{ site.url }}/img/bash-bug01.png)
 

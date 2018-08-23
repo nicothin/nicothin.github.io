@@ -110,17 +110,17 @@ fi
 
 ```bash
 git_branch() {
-  git branch 2> /dev/null | sed -e '/^\[^*\]/d' -e 's/* (.*)/(\\1)/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 ```
 
 Шаг 2: определим переменную, отвечающую за приглашение командной строки, добавим в неё показ результата работы этой функции (см. [`.bashrc`](https://gist.github.com/nicothin/3438e083b171c390a34f89371da7ff4b) ). Получится что-то вроде:
 
 ```bash
-if \[ "$color_prompt" = yes \]; then
-    PS1='${debian\_chroot:+($debian\_chroot)}\\\[\\033\[32m\\\]\\u@\\h\\\[\\033\[00m\\\]:\\\[\\033\[01;37m\\\]\\w\\\[\\033\[00m\\\] \\e\[32m$(git_branch)\\e\[0m $ '
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w\[\033[00m\]\e[32m$(git_branch)\e[0m \$ '
 else
-    PS1='${debian\_chroot:+($debian\_chroot)}\\u@\\h:\\w\ \\e\[32m$(git_branch)\\e\[0m $ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 ```
 
@@ -138,7 +138,18 @@ fi
 
 На одном из домашних компьютеров работает сохранение истории команд между сеансами, на другом не работает (хотя права доступа и владелец файла `~/.bash_history` — активный пользователь и сохранение истории включено). Не критично.
 
-После загрузки Windows иногда (редко) отказывается работать. Помогает перезагрузка (это же Windows).
+Не работают инструменты копирования в буфер. К примеру, при настройке SSH для github.com, есть инструкция для Linux:
+
+```bash
+sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+```
+
+Но её невозможно выполнить, т.к. xclip работать не будет. Решается использованием виндовской утилиты: `clip.exe < ~/.ssh/id_rsa.pub`
+
+После загрузки Windows иногда (было всего дважды) отказывается работать. Помогает перезагрузка (это же Windows).
 
 [![Баг bash-терминала: как будто он не установлен]({{ site.url }}/img/bash-bug01.png)]({{ site.url }}/img/bash-bug01.png)
 

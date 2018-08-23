@@ -55,32 +55,32 @@ WAI‑ARIA (Web Accessibility Initiative – Accessible Rich Internet Applicati
 Спецификация довольно обширная, но использовать можно лишь основные элементы.
 
 ```html
-&lt;!-- Главный заголовок сайта или внутренний заголовок страницы -->
-&lt;header role="banner">...&lt;/header>
+<!-- Главный заголовок сайта или внутренний заголовок страницы -->
+<header role="banner">...</header>
 
-&lt;!-- Навигация по сайту или по странице -->
-&lt;nav role="navigation">&lt;ul>...&lt;/ul>&lt;/nav>
+<!-- Навигация по сайту или по странице -->
+<nav role="navigation"><ul>...</ul></nav>
 
-&lt;!-- Основной контент -->
-&lt;main role="main">
-  &lt;!-- Важная срочная информация -->
-  &lt;div role="alert">&lt;/div>
-  &lt;!-- Большой раздел страницы -->
-  &lt;section role="region">&lt;/section>
-  &lt;!-- Самостоятельный элемент страницы -->
-  &lt;article role="article">&lt;/article>
-  &lt;!-- Очень странная «кнопка» -->
-  &lt;div role="button">button&lt;/div>
-&lt;/main>
+<!-- Основной контент -->
+<main role="main">
+  <!-- Важная срочная информация -->
+  <div role="alert"></div>
+  <!-- Большой раздел страницы -->
+  <section role="region"></section>
+  <!-- Самостоятельный элемент страницы -->
+  <article role="article"></article>
+  <!-- Очень странная «кнопка» -->
+  <div role="button">button</div>
+</main>
 
-&lt;!-- Второстепенный контент или информационный блок -->
-&lt;aside role="complementary">
-  &lt;!-- Поиск по сайту -->
-  &lt;form role="search">...&lt;/form>
-&lt;/aside>
+<!-- Второстепенный контент или информационный блок -->
+<aside role="complementary">
+  <!-- Поиск по сайту -->
+  <form role="search">...</form>
+</aside>
 
-&lt;!-- Какая то обобщающая информация -->
-&lt;footer role="contentinfo">...&lt;/footer>
+<!-- Какая то обобщающая информация -->
+<footer role="contentinfo">...</footer>
 ```
 
 ## Не извращайтесь

@@ -11,4 +11,4 @@ pict:      "bg-smoker.jpg"
 
 Электромыло: [nicothin@gmail.com](mailto:nicothin@gmail.com).
 
-Любые обсуждения, требующие что-либо показывать — через [hangouts](https://hangouts.google.com/).
+Любые обсуждения, требующие что-либо показывать — через [hangouts](https://hangouts.google.com/) или skype (логин: nicothin).

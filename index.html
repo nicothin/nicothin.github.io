@@ -12,7 +12,7 @@ isHome: true
         <p class="posts-list__item-subtitle">{{ post.subtitle }}</p>
       {% endif %}
       <p class="posts-list__item-meta">
-        <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">
+        <time class="posts-list__item-date" datetime="{{ post.date | date_to_xmlschema }}">
           {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
           {{ post.date | date: date_format }}.
         </time>

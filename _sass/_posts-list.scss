@@ -41,9 +41,11 @@
 
   &__item-subtitle {
     margin-top: 0;
+    margin-bottom: 0.4em;
   }
 
   &__item-meta {
+    margin-top: 0;
     margin-bottom: 2rem;
     color: $gray-light;
 
@@ -56,5 +58,9 @@
         color: $link-color;
       }
     }
+  }
+
+  &__item-date {
+    font-size: 80%;
   }
 }

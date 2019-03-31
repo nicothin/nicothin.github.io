@@ -26,10 +26,10 @@ pict:      "bg-smoker.jpg"
 
 ## За какую работу берусь
 
-Вёрстка. HTML, CSS, JS. Оптимально, кроссбраузерно (прогрессивное улучшение, mobile first, адаптивность). Не берусь за проекты, нуждающиеся в поддержке Internet Explorer старше 11 версии.
+Вёрстка. HTML, CSS, JS. Оптимально, кроссбраузерно (прогрессивное улучшение, mobile first, адаптивность). Не берусь за проекты, нуждающиеся в поддержке Internet Explorer 10 или более ранних.
 
 ### Стек технологий/методологий/ПО
 
-Мозг, Sass, LESS, Stylus, Pug/Jade, SVG, БЭМ, git, Photoshop, Sublime Text, bash-терминал, jQuery, Bootstrap, Gulp, адаптивность, mobile first.
+Мозг, Sass, LESS, Stylus, Pug/Jade, SVG, БЭМ, git, Photoshop, Sublime Text, bash-терминал, Gulp, адаптивность, mobile first.
 
 Собираю [собственную библиотеку технических решений](https://github.com/nicothin/NTH-start-project).

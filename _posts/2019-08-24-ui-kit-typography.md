@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Что веб-дизайнер должен знать про UI kit, если он профессионал"
+title:      "Что веб-дизайнер должен знать про UI kit"
 subtitle:   "Типографика в UI kit"
 permalink:  /page/:title
 categories: web

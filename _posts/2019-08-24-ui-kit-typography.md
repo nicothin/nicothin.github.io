@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Что веб-дизайнер должен знать про UI kit"
-subtitle:   "Типографика в UI kit"
+title:      "Типографика в UI kit"
+subtitle:   "Что нужно знать веб-дизайнеру"
 permalink:  /page/:title
 categories: web
 pict:       "bg-uikit.jpg"

@@ -36,4 +36,6 @@ HTML (Pug), CSS (Sass, LESS), JS (Vue, React и (без стыда) jQuery) и
 
 Собираю [собственную библиотеку технических решений](https://github.com/nicothin/NTH-start-project).
 
+Сделал [репозиторий с инструкциями, настройками и инструментами, применяемыми мной](https://github.com/nicothin/web-development).
+
 Несколько раз выступал на PiterCSS.

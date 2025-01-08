@@ -17,9 +17,9 @@ kramdown:
 
 vkontakte_username: "n.gromov"
 github_username:    "nicothin"
-youtube_channel:    "UC755nnsqbwosIkRlXRDfZKQ"
+# youtube_channel:    "UC755nnsqbwosIkRlXRDfZKQ"
 twitter_username:   "nicothin"
-instagram_username: "nicothinum"
+# instagram_username: "nicothinum"
 
 exclude:
   - node_modules
